@@ -1,0 +1,29 @@
+targets:
+  # - 8.8.8.8
+  # - 1.1.1.1
+  # - google.com:
+  #     asn: 15169
+  - unifi
+  - FOH-SW-PRI
+  - FOH-SW-SEC
+  - FOH-AP
+  - BEACH-SW-PRI
+  - BEACH-SW-SEC
+  - BEACH-AP
+  - 1.node.com
+  - 2.node.com
+  - 192.168.100.11
+  - 192.168.100.12
+
+# dns:
+#   refresh: 1m
+#   nameserver: 1.1.1.1
+
+ping:
+  interval: 1s
+  timeout: 1s
+  history-size: 4
+  size: 120
+
+options:
+  disableIPv6: true

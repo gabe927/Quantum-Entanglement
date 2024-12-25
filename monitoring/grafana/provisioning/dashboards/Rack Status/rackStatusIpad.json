@@ -1,0 +1,3935 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 10,
+    "links": [],
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "adhontqz8ge80b"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 9,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "id": 6,
+        "options": {
+          "weathermap": {
+            "id": "467738a4-9453-43f0-85f8-06d63b9acf8b",
+            "links": [
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "a26af8c8-6954-4e11-93e3-45bccaf7ca18",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                    "isConnection": false,
+                    "label": "FOH Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | 8.8.8.8",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 24",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-PRI | Port 24"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 24",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 24"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "f0723f7b-2d40-4f2d-93a1-ef776080b5c3",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#ff0000"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "eee6b515-7a39-416b-8b78-d612ab817d88",
+                    "isConnection": false,
+                    "label": "FOH Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      250
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "cf4ad128-c517-40d7-88d9-6f668876428a",
+                    "isConnection": false,
+                    "label": "Beach Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-SEC | Port 24",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-SEC | Port 24"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 24",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-SEC | Port 24"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "10b179a7-f82b-41cc-9bd9-562c64a19f57",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                    "isConnection": false,
+                    "label": "FOH Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | 8.8.8.8",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#ff0000"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "eee6b515-7a39-416b-8b78-d612ab817d88",
+                    "isConnection": false,
+                    "label": "FOH Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      250
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 23",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-PRI | Port 23"
+                  },
+                  "Z": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-SEC | Port 23",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-SEC | Port 23"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "3f46f539-3767-4b81-975c-3f4a5701607d",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "cf4ad128-c517-40d7-88d9-6f668876428a",
+                    "isConnection": false,
+                    "label": "Beach Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 1",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 1"
+                  },
+                  "Z": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 1",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-SEC | Port 1"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "51c137ad-536b-417a-a645-f295ef056daf",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "edf3f1fc-f5c0-4494-9b34-7d018fc9712c",
+                    "isConnection": false,
+                    "label": "Node 1",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      300,
+                      450
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 7",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 7"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 7",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | BEACH-SW-PRI | Port 7"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "194385d9-6ad1-4265-9e6c-85a840d15e60",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0412dd2f-5982-4421-b395-6f6f11326a02",
+                    "isConnection": false,
+                    "label": "Node 2",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      460,
+                      450
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 8",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 8"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 8",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | BEACH-SW-PRI | Port 8"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "344a07b1-4d4d-464c-a12b-3c2f98854628",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "cf4ad128-c517-40d7-88d9-6f668876428a",
+                    "isConnection": false,
+                    "label": "Beach Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "edf3f1fc-f5c0-4494-9b34-7d018fc9712c",
+                    "isConnection": false,
+                    "label": "Node 1",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      300,
+                      450
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 8",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-SEC | Port 8"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 8",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | BEACH-SW-SEC | Port 8"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "2a5aa369-b7dd-47d8-974c-cb236bca9b70",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "cf4ad128-c517-40d7-88d9-6f668876428a",
+                    "isConnection": false,
+                    "label": "Beach Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0412dd2f-5982-4421-b395-6f6f11326a02",
+                    "isConnection": false,
+                    "label": "Node 2",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      460,
+                      450
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 7",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-SEC | Port 7"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 7",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | BEACH-SW-SEC | Port 7"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "15d65c49-51a4-4b1d-8c98-806c61a1aa7b",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                    "isConnection": false,
+                    "label": "FOH Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | 8.8.8.8",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "71a8f646-7d45-49f8-bfdf-fb7086e3370f",
+                    "isConnection": false,
+                    "label": "Console Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      300,
+                      150
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 1",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-PRI | Port 1"
+                  },
+                  "Z": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 1",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | FOH-SW-PRI | Port 1"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "44e43fbe-04ae-4f41-bd96-032c1e2c1bf7",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#ff0000"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "eee6b515-7a39-416b-8b78-d612ab817d88",
+                    "isConnection": false,
+                    "label": "FOH Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      250
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "dashboardLink": "",
+                    "id": "4579ff6c-4d1d-43b0-91b9-36177082151e",
+                    "isConnection": false,
+                    "label": "Console Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      460,
+                      150
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-SEC | Port 1",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-SEC | Port 1"
+                  },
+                  "Z": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-SEC | Port 1",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | FOH-SW-SEC | Port 1"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "f44c038a-7ca8-4ddb-9267-451afa0f9f72",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                    "isConnection": false,
+                    "label": "FOH Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | 8.8.8.8",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "af0832b2-890a-496b-8f59-43986e827952",
+                    "isConnection": false,
+                    "label": "FOH AP",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      140,
+                      235
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 16",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-PRI | Port 16"
+                  },
+                  "Z": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 16",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | FOH-SW-PRI | Port 16"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "6848e3d4-0223-4887-9400-7e1892dc2a47",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "62698a5e-14c6-4aba-a7c9-24195852043e",
+                    "isConnection": false,
+                    "label": "Beach AP",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      140,
+                      335
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 16",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 16"
+                  },
+                  "Z": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 16",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | BEACH-SW-PRI | Port 16"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "541e6d38-487a-468d-8ecf-2562beebb417",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "bfa68a43-88bb-40fc-91cf-2f65bea67634",
+                    "isConnection": false,
+                    "label": "Dream Machine",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      140,
+                      365
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 23",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 23"
+                  },
+                  "Z": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | LX-NET-1 | Port 6",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | LX-NET-1 | Port 6"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "ec2369e5-3b71-4d30-ad8e-35db0b3a3d9e",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "bfa68a43-88bb-40fc-91cf-2f65bea67634",
+                    "isConnection": false,
+                    "label": "Dream Machine",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      140,
+                      365
+                    ],
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "feaf7c8f-fec1-4654-847d-ab9d7d4d7755",
+                    "isConnection": false,
+                    "label": "WAN 1",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      -20,
+                      365
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | LX-NET-1 | Port 9",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | LX-NET-1 | Port 9"
+                  },
+                  "Z": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | LX-NET-1 | Port 9",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Receive | LX-NET-1 | Port 9"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "89d635c2-e3cf-40d2-afe7-45a3f8b26a14",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                    "isConnection": false,
+                    "label": "FOH Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | 8.8.8.8",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "8256c0dc-3835-4c22-95eb-3e206fd6f718",
+                    "isConnection": false,
+                    "label": "WAN 2",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 4
+                    },
+                    "position": [
+                      -20,
+                      265
+                    ],
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 3,
+                    "bandwidth": 0,
+                    "dashboardLink": "",
+                    "labelOffset": 55
+                  },
+                  "Z": {
+                    "anchor": 4,
+                    "bandwidth": 0,
+                    "dashboardLink": "",
+                    "labelOffset": 55
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "4b03c842-75c4-418a-8fae-6cfea3bc004e",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                    "isConnection": false,
+                    "label": "FOH Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | FOH-SW-PRI",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                    "isConnection": false,
+                    "label": "Beach Primary",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 3
+                    },
+                    "position": [
+                      300,
+                      350
+                    ],
+                    "statusQuery": "Ping Loss Ratio | BEACH-SW-PRI",
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-PRI | Port 25",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-PRI | Port 25"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-PRI | Port 25",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-PRI | Port 25"
+                  }
+                },
+                "stroke": 8
+              },
+              {
+                "arrows": {
+                  "height": 10,
+                  "offset": 2,
+                  "width": 8
+                },
+                "id": "4209b84f-1f2e-4a29-9dd7-5b368af89a41",
+                "nodes": [
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#ff0000"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "eee6b515-7a39-416b-8b78-d612ab817d88",
+                    "isConnection": false,
+                    "label": "FOH Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      250
+                    ],
+                    "statusQuery": "Ping Loss Ratio | FOH-SW-SEC",
+                    "useConstantSpacing": false
+                  },
+                  {
+                    "anchors": {
+                      "0": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      },
+                      "1": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "2": {
+                        "numFilledLinks": 0,
+                        "numLinks": 2
+                      },
+                      "3": {
+                        "numFilledLinks": 0,
+                        "numLinks": 1
+                      },
+                      "4": {
+                        "numFilledLinks": 0,
+                        "numLinks": 0
+                      }
+                    },
+                    "colors": {
+                      "background": "rgba(204, 204, 220, 0.10)",
+                      "border": "rgba(204, 204, 220, 0.08)",
+                      "font": "rgb(204, 204, 220)",
+                      "statusDown": "#C4162A"
+                    },
+                    "compactVerticalLinks": false,
+                    "id": "cf4ad128-c517-40d7-88d9-6f668876428a",
+                    "isConnection": false,
+                    "label": "Beach Backup",
+                    "nodeIcon": {
+                      "drawInside": false,
+                      "name": "",
+                      "padding": {
+                        "horizontal": 0,
+                        "vertical": 0
+                      },
+                      "size": {
+                        "height": 0,
+                        "width": 0
+                      },
+                      "src": ""
+                    },
+                    "padding": {
+                      "horizontal": 10,
+                      "vertical": 10
+                    },
+                    "position": [
+                      460,
+                      350
+                    ],
+                    "statusQuery": "Ping Loss Ratio | BEACH-SW-SEC",
+                    "useConstantSpacing": false
+                  }
+                ],
+                "showThroughputPercentage": false,
+                "sides": {
+                  "A": {
+                    "anchor": 2,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | FOH-SW-SEC | Port 25",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | FOH-SW-SEC | Port 25"
+                  },
+                  "Z": {
+                    "anchor": 1,
+                    "bandwidth": 0,
+                    "bandwidthQuery": "Link Speed | BEACH-SW-SEC | Port 25",
+                    "dashboardLink": "",
+                    "labelOffset": 55,
+                    "query": "Transmit | BEACH-SW-SEC | Port 25"
+                  }
+                },
+                "stroke": 8
+              }
+            ],
+            "nodes": [
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "0257fb5e-c8e1-4ed5-8081-1167dee93fff",
+                "isConnection": false,
+                "label": "FOH Primary",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 3
+                },
+                "position": [
+                  300,
+                  250
+                ],
+                "statusQuery": "Ping Loss Ratio | FOH-SW-PRI",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#ff0000"
+                },
+                "compactVerticalLinks": false,
+                "id": "eee6b515-7a39-416b-8b78-d612ab817d88",
+                "isConnection": false,
+                "label": "FOH Backup",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 10
+                },
+                "position": [
+                  460,
+                  250
+                ],
+                "statusQuery": "Ping Loss Ratio | FOH-SW-SEC",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "c0e7a2f9-1f5d-4cb0-a422-ab1615a37905",
+                "isConnection": false,
+                "label": "Beach Primary",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 3
+                },
+                "position": [
+                  300,
+                  350
+                ],
+                "statusQuery": "Ping Loss Ratio | BEACH-SW-PRI",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "cf4ad128-c517-40d7-88d9-6f668876428a",
+                "isConnection": false,
+                "label": "Beach Backup",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 10
+                },
+                "position": [
+                  460,
+                  350
+                ],
+                "statusQuery": "Ping Loss Ratio | BEACH-SW-SEC",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "bfa68a43-88bb-40fc-91cf-2f65bea67634",
+                "isConnection": false,
+                "label": "Dream Machine",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  140,
+                  365
+                ],
+                "statusQuery": "Ping Loss Ratio | unifi",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "af0832b2-890a-496b-8f59-43986e827952",
+                "isConnection": false,
+                "label": "FOH AP",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  140,
+                  235
+                ],
+                "statusQuery": "Ping Loss Ratio | FOH-AP",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "62698a5e-14c6-4aba-a7c9-24195852043e",
+                "isConnection": false,
+                "label": "Beach AP",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  140,
+                  335
+                ],
+                "statusQuery": "Ping Loss Ratio | BEACH-AP",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "71a8f646-7d45-49f8-bfdf-fb7086e3370f",
+                "isConnection": false,
+                "label": "Console Primary",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  300,
+                  150
+                ],
+                "statusQuery": "Ping Loss Ratio | 192.168.100.11",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "dashboardLink": "",
+                "id": "4579ff6c-4d1d-43b0-91b9-36177082151e",
+                "isConnection": false,
+                "label": "Console Backup",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  460,
+                  150
+                ],
+                "statusQuery": "Ping Loss Ratio | 192.168.100.12",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "edf3f1fc-f5c0-4494-9b34-7d018fc9712c",
+                "isConnection": false,
+                "label": "Node 1",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  300,
+                  450
+                ],
+                "statusQuery": "Ping Loss Ratio | 1.node.com",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 2
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "0412dd2f-5982-4421-b395-6f6f11326a02",
+                "isConnection": false,
+                "label": "Node 2",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  460,
+                  450
+                ],
+                "statusQuery": "Ping Loss Ratio | 2.node.com",
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "feaf7c8f-fec1-4654-847d-ab9d7d4d7755",
+                "isConnection": false,
+                "label": "WAN 1",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  -20,
+                  365
+                ],
+                "useConstantSpacing": false
+              },
+              {
+                "anchors": {
+                  "0": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "1": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "2": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "3": {
+                    "numFilledLinks": 0,
+                    "numLinks": 0
+                  },
+                  "4": {
+                    "numFilledLinks": 0,
+                    "numLinks": 1
+                  }
+                },
+                "colors": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)",
+                  "statusDown": "#C4162A"
+                },
+                "compactVerticalLinks": false,
+                "id": "8256c0dc-3835-4c22-95eb-3e206fd6f718",
+                "isConnection": false,
+                "label": "WAN 2",
+                "nodeIcon": {
+                  "drawInside": false,
+                  "name": "",
+                  "padding": {
+                    "horizontal": 0,
+                    "vertical": 0
+                  },
+                  "size": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "src": ""
+                },
+                "padding": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "position": [
+                  -20,
+                  265
+                ],
+                "useConstantSpacing": false
+              }
+            ],
+            "scale": [
+              {
+                "color": "#313944",
+                "percent": 0
+              },
+              {
+                "color": "#37872D",
+                "percent": 0.1
+              },
+              {
+                "color": "#FA6400",
+                "percent": 50
+              },
+              {
+                "color": "#C4162A",
+                "percent": 80
+              }
+            ],
+            "settings": {
+              "fontSizing": {
+                "link": 6,
+                "node": 10
+              },
+              "link": {
+                "defaultUnits": "bps",
+                "label": {
+                  "background": "rgba(204, 204, 220, 0.10)",
+                  "border": "rgba(204, 204, 220, 0.08)",
+                  "font": "rgb(204, 204, 220)"
+                },
+                "showAllWithPercentage": false,
+                "spacing": {
+                  "horizontal": 10,
+                  "vertical": 4
+                },
+                "stroke": {
+                  "color": "rgba(204, 204, 220, 0.10)"
+                }
+              },
+              "panel": {
+                "backgroundColor": "#181b1f",
+                "grid": {
+                  "enabled": false,
+                  "guidesEnabled": false,
+                  "size": 10
+                },
+                "offset": {
+                  "x": 80,
+                  "y": -12
+                },
+                "panelSize": {
+                  "height": 600,
+                  "width": 600
+                },
+                "showTimestamp": true,
+                "zoomScale": -2
+              },
+              "scale": {
+                "fontSizing": {
+                  "threshold": 12,
+                  "title": 16
+                },
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "size": {
+                  "height": 200,
+                  "width": 50
+                },
+                "title": "Traffic Load"
+              },
+              "tooltip": {
+                "backgroundColor": "black",
+                "fontSize": 8,
+                "inboundColor": "#00cf00",
+                "outboundColor": "#fade2a",
+                "scaleToBandwidth": false,
+                "textColor": "white"
+              }
+            },
+            "version": 14
+          }
+        },
+        "pluginVersion": "0.4.3",
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "adhontqz8ge80b"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "exemplar": false,
+            "expr": "ping_loss_ratio < bool 0.25",
+            "fullMetaSearch": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "interval": "",
+            "legendFormat": "Ping Loss Ratio | {{target}}",
+            "range": true,
+            "refId": "A",
+            "useBackend": false
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "adhontqz8ge80b"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "exemplar": false,
+            "expr": "unpoller_device_port_port_speed_bps OR vector(0)",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "interval": "$Smooth",
+            "legendFormat": "Link Speed | {{name}} | Port {{port_num}}",
+            "range": true,
+            "refId": "B",
+            "useBackend": false
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "adhontqz8ge80b"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "exemplar": false,
+            "expr": "rate(unpoller_device_port_transmit_bytes_total[$__rate_interval]) * 8",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": false,
+            "instant": false,
+            "interval": "$Smooth",
+            "legendFormat": "Transmit | {{name}} | Port {{port_num}}",
+            "range": true,
+            "refId": "C",
+            "useBackend": false
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "adhontqz8ge80b"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "exemplar": false,
+            "expr": "rate(unpoller_device_port_receive_bytes_total[$__rate_interval]) * 8",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": false,
+            "instant": false,
+            "interval": "$Smooth",
+            "legendFormat": "Receive | {{name}} | Port {{port_num}}",
+            "range": true,
+            "refId": "D",
+            "useBackend": false
+          }
+        ],
+        "title": "Panel Title",
+        "type": "knightss27-weathermap-panel"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 10,
+          "x": 0,
+          "y": 9
+        },
+        "id": 1,
+        "options": {
+          "bgColor": "",
+          "clockType": "12 hour",
+          "countdownSettings": {
+            "endCountdownTime": "2024-04-04T03:57:44-04:00",
+            "endText": "00:00:00"
+          },
+          "countupSettings": {
+            "beginCountupTime": "2024-04-04T03:57:44-04:00",
+            "beginText": "00:00:00"
+          },
+          "dateSettings": {
+            "dateFormat": "MMMM DD, YYYY",
+            "fontSize": "20px",
+            "fontWeight": "normal",
+            "locale": "",
+            "showDate": true
+          },
+          "fontMono": true,
+          "mode": "time",
+          "refresh": "sec",
+          "timeSettings": {
+            "fontSize": "60px",
+            "fontWeight": "normal"
+          },
+          "timezone": "dashboard",
+          "timezoneSettings": {
+            "fontSize": "12px",
+            "fontWeight": "normal",
+            "showTimezone": false,
+            "zoneFormat": "offsetAbbv"
+          }
+        },
+        "pluginVersion": "2.1.5",
+        "title": "Panel Title",
+        "type": "grafana-clock-panel"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "adhontqz8ge80b"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "dark-red",
+                    "index": 1,
+                    "text": "DOWN"
+                  },
+                  "1": {
+                    "color": "dark-green",
+                    "index": 2,
+                    "text": "OK"
+                  },
+                  "2": {
+                    "color": "blue",
+                    "index": 3,
+                    "text": "FLIPPED"
+                  },
+                  "3": {
+                    "color": "dark-purple",
+                    "index": 4,
+                    "text": "UNKNOWN"
+                  },
+                  "-1": {
+                    "color": "dark-purple",
+                    "index": 0,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 14,
+          "x": 10,
+          "y": 9
+        },
+        "id": 5,
+        "options": {
+          "infinitePan": false,
+          "inlineEditing": false,
+          "panZoom": false,
+          "root": {
+            "background": {
+              "color": {
+                "fixed": "transparent"
+              },
+              "image": {
+                "fixed": ""
+              }
+            },
+            "border": {
+              "color": {
+                "fixed": "dark-green"
+              }
+            },
+            "constraint": {
+              "horizontal": "left",
+              "vertical": "top"
+            },
+            "elements": [
+              {
+                "background": {
+                  "color": {
+                    "fixed": "#3f3f3f"
+                  },
+                  "image": {
+                    "mode": "fixed"
+                  },
+                  "size": "cover"
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "center",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "fixed": "Fiber",
+                    "mode": "fixed"
+                  },
+                  "valign": "top"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "Element 3",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 136,
+                  "left": -173,
+                  "top": 2,
+                  "width": 206
+                },
+                "type": "rectangle"
+              },
+              {
+                "background": {
+                  "color": {
+                    "fixed": "#3f3f3f"
+                  },
+                  "image": {
+                    "mode": "fixed"
+                  },
+                  "size": "cover"
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "center",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "fixed": "Ethernet",
+                    "mode": "fixed"
+                  },
+                  "valign": "top"
+                },
+                "connections": [],
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "Element 1",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 136,
+                  "left": 59,
+                  "top": 2,
+                  "width": 206
+                },
+                "type": "rectangle"
+              },
+              {
+                "background": {
+                  "color": {
+                    "fixed": "#a54200"
+                  }
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "left",
+                  "color": {
+                    "fixed": "#0b0b0b"
+                  },
+                  "size": 20,
+                  "text": {
+                    "fixed": "Primary"
+                  },
+                  "valign": "middle"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "Element 2",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 42,
+                  "left": -9.5,
+                  "top": 20,
+                  "width": 531
+                },
+                "type": "rectangle"
+              },
+              {
+                "background": {
+                  "color": {
+                    "fixed": "#888b00"
+                  }
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "left",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "fixed": "Backup"
+                  },
+                  "valign": "middle"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "Element 4",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 42,
+                  "left": -9.5,
+                  "top": -33,
+                  "width": 531
+                },
+                "type": "rectangle"
+              },
+              {
+                "background": {
+                  "color": {
+                    "field": "ss_ethernet_primary",
+                    "fixed": "dark-red"
+                  }
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "center",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "field": "ss_ethernet_primary",
+                    "fixed": "DOWN",
+                    "mode": "field"
+                  },
+                  "valign": "middle"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "ETH PRI",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 33,
+                  "left": 58.5,
+                  "top": 19.5,
+                  "width": 197
+                },
+                "type": "metric-value"
+              },
+              {
+                "background": {
+                  "color": {
+                    "field": "ss_ethernet_backup",
+                    "fixed": "dark-green"
+                  }
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "center",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "field": "ss_ethernet_backup",
+                    "fixed": "OK",
+                    "mode": "field"
+                  },
+                  "valign": "middle"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "ETH BKP",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 33,
+                  "left": 58.5,
+                  "top": -33.5,
+                  "width": 197
+                },
+                "type": "metric-value"
+              },
+              {
+                "background": {
+                  "color": {
+                    "field": "ss_fiber_primary",
+                    "fixed": "dark-blue"
+                  }
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "center",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "field": "ss_fiber_primary",
+                    "fixed": "FLIPPED",
+                    "mode": "field"
+                  },
+                  "valign": "middle"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "FIB PRI",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 33,
+                  "left": -172.5,
+                  "top": 19.5,
+                  "width": 197
+                },
+                "type": "metric-value"
+              },
+              {
+                "background": {
+                  "color": {
+                    "field": "ss_fiber_backup",
+                    "fixed": "dark-blue"
+                  },
+                  "image": {
+                    "field": "",
+                    "mode": "field"
+                  }
+                },
+                "border": {
+                  "color": {
+                    "fixed": "dark-green"
+                  }
+                },
+                "config": {
+                  "align": "center",
+                  "color": {
+                    "fixed": "#000000"
+                  },
+                  "size": 20,
+                  "text": {
+                    "field": "ss_fiber_backup",
+                    "fixed": "FLIPPED",
+                    "mode": "field"
+                  },
+                  "valign": "middle"
+                },
+                "constraint": {
+                  "horizontal": "center",
+                  "vertical": "center"
+                },
+                "name": "FIB BKP",
+                "oneClickMode": "off",
+                "placement": {
+                  "height": 33,
+                  "left": -172.5,
+                  "top": -33.5,
+                  "width": 197
+                },
+                "type": "metric-value"
+              }
+            ],
+            "name": "Element 1713046433148",
+            "oneClickMode": "off",
+            "placement": {
+              "height": 100,
+              "left": 0,
+              "top": 0,
+              "width": 100
+            },
+            "type": "frame"
+          },
+          "showAdvancedTypes": true
+        },
+        "pluginVersion": "11.3.0+security-01",
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "adhontqz8ge80b"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "uniprom_snake_status",
+            "fullMetaSearch": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "legendFormat": "ss_{{media_type}}_{{port_rank}}",
+            "range": true,
+            "refId": "A",
+            "useBackend": false
+          }
+        ],
+        "title": "Snake Status",
+        "type": "canvas"
+      }
+    ],
+    "preload": false,
+    "refresh": "5s",
+    "schemaVersion": 40,
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "text": "1m",
+            "value": "1m"
+          },
+          "includeAll": false,
+          "name": "Smooth",
+          "options": [
+            {
+              "selected": false,
+              "text": "10s",
+              "value": "10s"
+            },
+            {
+              "selected": false,
+              "text": "15s",
+              "value": "15s"
+            },
+            {
+              "selected": false,
+              "text": "30s",
+              "value": "30s"
+            },
+            {
+              "selected": true,
+              "text": "1m",
+              "value": "1m"
+            },
+            {
+              "selected": false,
+              "text": "2m",
+              "value": "2m"
+            },
+            {
+              "selected": false,
+              "text": "5m",
+              "value": "5m"
+            },
+            {
+              "selected": false,
+              "text": "10m",
+              "value": "10m"
+            },
+            {
+              "selected": false,
+              "text": "15m",
+              "value": "15m"
+            },
+            {
+              "selected": false,
+              "text": "30m",
+              "value": "30m"
+            }
+          ],
+          "query": "10s,15s,30s,1m,2m,5m,10m,15m,30m",
+          "type": "custom"
+        }
+      ]
+    },
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "Rack Status iPad",
+    "uid": "bdooe3pi7eubka",
+    "version": 2,
+    "weekStart": ""
+  }

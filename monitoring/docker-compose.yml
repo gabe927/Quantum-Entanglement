@@ -1,0 +1,72 @@
+services:
+  # grafana:
+    # environment:
+      # - "GF_PATHS_CONFIG=/etc/grafana/grafana.ini"
+      # - "GF_PATHS_DATA=/var/lib/grafana"
+      # - "GF_PATHS_HOME=/usr/share/grafana"
+      # - "GF_PATHS_LOGS=/var/log/grafana"
+      # - "GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+      # - "GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+    # image: "grafana/grafana:latest"
+    # ports:
+    #   - "3000:3000/tcp"
+    # restart: "unless-stopped"
+    # volumes:
+    #   - "./grafana/data:/var/lib/grafana"
+  
+  grafana:
+    # environment:
+      # - "GF_PATHS_CONFIG=/etc/grafana/grafana.ini"
+      # - "GF_PATHS_DATA=/var/lib/grafana"
+      # - "GF_PATHS_HOME=/usr/share/grafana"
+      # - "GF_PATHS_LOGS=/var/log/grafana"
+      # - "GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+      # - "GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+    image: "grafana/grafana:latest"
+    ports:
+      - "3000:3000/tcp"
+    restart: "unless-stopped"
+    volumes:
+      - "./grafana/provisioning:/etc/grafana/provisioning"
+      - "grafana-data:/var/lib/grafana"
+      - "./grafana/data/plugins:/var/lib/grafana/plugins"
+
+  prometheus:
+    image: "prom/prometheus:latest"
+    ports:
+      - "9090:9090/tcp"
+    restart: "unless-stopped"
+    volumes:
+      - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "prometheus-data:/prometheus"
+
+  ping_exporter:
+    environment:
+      - "CONFIG_FILE=/config/config.yml"
+      - "CMD_FLAGS="
+    image: "czerwonk/ping_exporter"
+    ports:
+      - "9427:9427/tcp"
+    restart: "unless-stopped"
+    volumes:
+      - "./exporters/ping:/config:ro"
+
+  uniprom:
+    env_file:
+      - "./exporters/uniprom/.env"
+    image: "ghcr.io/gabe927/uniprom:latest"
+    ports:
+      - "9430:9430/tcp"
+    restart: "unless-stopped"
+
+  unpoller:
+    image: "ghcr.io/unpoller/unpoller:latest"
+    ports:
+      - "9130:9130/tcp"
+    restart: "unless-stopped"
+    env_file:
+      - "./exporters/unpoller/.env"
+
+volumes:
+  prometheus-data:
+  grafana-data:

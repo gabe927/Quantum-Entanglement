@@ -1,0 +1,105 @@
+apiVersion: 1
+groups:
+    - orgId: 1
+      name: Ping tests
+      folder: Unifi
+      interval: 10s
+      rules:
+        - uid: adnxfsnkurksgf
+          title: Ping Alerts
+          condition: C
+          data:
+            - refId: A
+              relativeTimeRange:
+                from: 600
+                to: 0
+              datasourceUid: adhontqz8ge80b
+              model:
+                disableTextWrap: false
+                editorMode: builder
+                expr: ping_loss_ratio
+                fullMetaSearch: false
+                includeNullMetadata: true
+                instant: true
+                intervalMs: 1000
+                legendFormat: Ping Loss Ratio | {{target}}
+                maxDataPoints: 43200
+                range: false
+                refId: A
+                useBackend: false
+            - refId: C
+              relativeTimeRange:
+                from: 600
+                to: 0
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 0.5
+                        type: gt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - C
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: A
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: C
+                type: threshold
+          dashboardUid: adhob093vda80e
+          panelId: 6
+          noDataState: NoData
+          execErrState: Error
+          for: 10s
+          annotations:
+            __dashboardUid__: adhob093vda80e
+            __panelId__: "6"
+            summary: A device has failed a ping
+          labels: {}
+          isPaused: false
+
+contactPoints:
+    - orgId: 1
+      name: HS Google Chat - LX Network Alerts
+      receivers:
+        - uid: be43fs62t40e8f
+          type: googlechat
+          settings:
+            message: '{{ template "Ping Targets Message" . }}'
+            title: '{{ template "Ping Targets Title" . }}'
+            url: "YOUR_GOOGLE_CHAT_WEBHOOK_HERE"
+          disableResolveMessage: false
+
+policies:
+    - orgId: 1
+      receiver: HS Google Chat - LX Network Alerts
+      group_by:
+        - grafana_folder
+        - alertname
+      group_wait: 10s
+      group_interval: 1m
+      repeat_interval: 1w
+
+templates:
+  - orgID: 1
+    name: "Ping Targets"
+    template : |
+      {{ define "Ping Targets Message" }}{{ if gt (len .Alerts.Firing) 0 }}PING - OFFLINE Targets:
+      {{ range .Alerts.Firing }}{{ index .Labels "target" }}
+      {{ end }}{{ if gt (len .Alerts.Resolved) 0 }}
+
+      {{ end }}{{ end }}{{ if gt (len .Alerts.Resolved) 0 }}PING - RECOVERED Targets:
+      {{ range .Alerts.Resolved }}{{ index .Labels "target" }}
+      {{ end }}
+      {{ end }}{{ end }}
+
+      {{ define "Ping Targets Title" }}Ping Alerts [{{ .Status | toUpper }}{{ if eq .Status "firing" }}:{{ .Alerts.Firing | len }}{{ if gt (.Alerts.Resolved | len) 0 }}, RESOLVED:{{ .Alerts.Resolved | len }}{{ end }}{{ end }}]{{ end }}
